@@ -3,7 +3,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #444444;
 }
 
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -88,7 +88,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.9);
+  background: #fa9cad;
   padding: 12px 0;
 }
 
@@ -124,7 +124,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   font-size: 15px;
   padding: 0 4px;
@@ -142,7 +142,7 @@ h6 {
 }
 
 .navbar > ul > li > a:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
@@ -354,14 +354,14 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/perpus-bg.jpg") top center;
+  background: url('../img/perpus-bg.jpg') top center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.85);
+  content: '';
+  background: rgba(88, 90, 87, 0.171);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -408,7 +408,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -543,7 +543,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -584,7 +584,7 @@ section {
 }
 
 .services .icon-box::before {
-  content: "";
+  content: '';
   position: absolute;
   background: #fdeff2;
   right: 0;
@@ -696,7 +696,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -910,7 +910,7 @@ section {
   font-size: 42px;
   color: #e43c5c;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -963,7 +963,7 @@ section {
   color: #e43c5c;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1246,7 +1246,7 @@ section {
 }
 
 .contact .php-email-form .loading:before {
-  content: "";
+  content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1277,7 +1277,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type='submit'] {
   background: #e43c5c;
   border: 0;
   padding: 10px 28px;
@@ -1286,7 +1286,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type='submit']:hover {
   background: #d01d3f;
 }
 
@@ -1337,7 +1337,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #655356;
-  content: "/";
+  content: '/';
 }
 
 /*--------------------------------------------------------------
@@ -1454,7 +1454,7 @@ section {
 }
 
 .blog .entry .entry-content blockquote::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -1509,7 +1509,7 @@ section {
 .blog .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
-  content: ",";
+  content: ',';
 }
 
 .blog .entry .entry-footer .share {
@@ -1725,7 +1725,7 @@ section {
   position: relative;
 }
 
-.blog .sidebar .search-form form input[type="text"] {
+.blog .sidebar .search-form form input[type='text'] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -1879,7 +1879,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #777777;
 }
 
@@ -1952,13 +1952,13 @@ section {
   border: 1px solid #f7c2cc;
 }
 
-#footer .footer-newsletter form input[type="email"] {
+#footer .footer-newsletter form input[type='email'] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type="submit"] {
+#footer .footer-newsletter form input[type='submit'] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -1974,7 +1974,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-newsletter form input[type='submit']:hover {
   background: #d01d3f;
 }
 

@@ -1,196 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sub-styles.css" />
+    <link href="assets/img/logo_bjn.png" rel="icon">
+    <title>KP-IPLM</title>
+    <style>
+        .nav__logo {
+            display: flex;
+            align-items: center;
+        }
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        .nav__logo img {
+            /* margin-right: 10px;  */
+            width: 82px; 
+            height: 70px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Awal Naviasi -->
+    <nav>
+      <div class="nav__logo"><img src="assets/img/Logo-Kabupaten-Bojonegoro.png" width="20px" height="" alt="Logo Pemerintah Kabupaten Bojonegoro"> DINAS PERPUSTAKAAN DAN KEARSIPAN <br>KABUPATEN BOJONEGORO</br></div>
+      <ul class="nav__links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#category">Kategori</a></li>
+        <li class="link"><a href="#lokasi">Lokasi</a></li>
+        <li class="link"><a href="#koleksi">Koleksi</a></li>
+        <li class="link"><a href="#team">Team</a></li>
+      </ul>
+      <a href="form/hasil_iplm.php"><button class="btn">Hasil IPLM</button></a>
 
-  <title>KP-IPLM</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    </nav>
+    <!-- End Navigasi -->
 
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-  <link href="assets/img/logo_bjn.png" rel="icon">
+    <!-- Awal Header -->
+    <header id="home">
+      <div class="section__container header__container" style="margin-top: 70px">
+        <div class="header__image">
+          <img src="assets/pp.png" alt="header" />
+          <img src="assets/buku.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <div>
+            <p class="sub__header">IPLM</p>
+            <h2>Ayo Membaca !<br>
+            Ayo ke Perpustakaan !</h2>
+            <p class="section__subtitle">Suatu website yang dikembangkan untuk mempermudah perhitungan Pengukuran Indeks Pembangunan Literasi Masyarakat (IPLM) agar lebih mudah dan menyenangkan.</p>
+            <div class="action__btns">
+              <a href="#category"><button class="btn">Mulai hitung</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Awal Hitung UPLM -->
+    <section class="category" id="category">
+      <div class="section__container category__container">
+        <img src="assets/bg-png.png" alt="bg" class="category__bg" />
+        <h2 class="section__headerr">Unsur Pembangun <span>Literasi</span> Masyarakat</h2>
+        <p class="section__descriptionn">IPLM mengukur kondisi perpustakaan di seluruh Indonesia, termasuk sebaran, koleksi, tenaga perpustakaan, dan pemustaka.</p>
+        <div class="category__flex">
+          <div class="category__card">
+            <a href="form/uplm1.php"><img src="assets/uplm1.png" alt="category" /></a>
+            <h4>UPLM1</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm2.php"><img src="assets/uplm2.png" alt="category" /></a>
+            <h4>UPLM2</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm3.php"><img src="assets/uplm3.png" alt="category" /></a>
+            <h4>UPLM3</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm4.php"><img src="assets/uplm4.png" alt="category" /></a>
+            <h4>UPLM4</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm5.php"><img src="assets/uplm5.png" alt="category" /></a>
+            <h4>UPLM5</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm6.php"><img src="assets/uplm6.png" alt="category" /></a>
+            <h4>UPLM6</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/uplm7.php"><img src="assets/uplm7.png" alt="category" /></a>
+            <h4>UPLM7</h4>
+          </div>
+          <div class="category__card">
+            <a href="form/iplm.php"><img src="assets/iplm.png" alt="category" /></a>
+            <h4>IPLM</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hitung UPLM -->
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
+    <!-- Awal Lokasi -->
+    <section class="section__container travel__container" id="lokasi">
+      <div class="travel__image">
+        <img src="assets/dinas.jpg" alt="travel" />
+      </div>
+      <div class="travel__content">
+        <h2 class="section__header">Perpustakaan<br />Daerah Bojonegoro</h2>
+        <p class="section__description">Perpustakaan Bojonegoro merupakan pusat pengetahuan yang menyediakan beragam koleksi bacaan dan layanan informatif. Tempat ini menjadi sumber inspirasi dan pembelajaran bagi masyarakat Bojonegoro.</p>
+        <a href="https://maps.app.goo.gl/gQCqPweWMc6W19vx5" target="_blank">
+          <button class="btn" id="lokasi">Lokasi</button>
+        </a>
+        <a href="#lokasi"><img src="assets/lok.png" alt="map"  width="100%"/></a>
+      </div>
+    </section>
+    <!-- End Lokasi -->
 
-<body>
+    <!-- Awal Koleksi -->
+    <section class="section__container explore__container" id="koleksi">
+      <div class="explore__content">
+        <h2 class="section__header">Jelajahi Koleksi<br />Buku Menarik</h2>
+      </div>
+      <div class="explore__wrapper">
+        <div class="explore__wrapper-inner">
+          <img src="assets/buku1.png" alt="explore" />
+          <img src="assets/buku2.jpg" alt="explore" />
+          <img src="assets/buku3.jpg" alt="explore" />
+          <img src="assets/buku4.jpeg" alt="explore" />
+        </div>
+      </div>
+    </section>
+    <!-- End Koleksi -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Tung PLM</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#uplm">UPLM</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <h3>Welcome to <strong>Tung PLM</strong></h3>
-      <h2>Pengukuran Indeks Pembangunan Literasi Masyarakat</h2>
-      <!-- <h3>Hello Pustakawan</h> -->
-      <a href="#uplm" class="btn-get-started scrollto">Get Started</a>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-  <div class="container">
-
-<div class="section-title">
-  <h2>About</h2>
-  <h3>Selengkapnya tentang <span>IPLM</span></h3>
-  <p>Pengukuran Indeks Pembangunan Literasi Masyarakat</p>
-</div>
-
-<div class="row content">
-  <div class="col-lg-6">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.
-    </p>
-    <ul>
-      <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-      <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-      <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-    </ul>
-  </div>
-  <div class="col-lg-6 pt-4 pt-lg-0">
-    <p>
-      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-      culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <a href="#" class="btn-learn-more">Learn More</a>
-  </div>
-</div>
-
-</div>
-  </section>
-    <!-- ======= UPLM Section ======= -->
-  <section id="uplm" class="uplm">
-      <!-- Include portfolio content from home.php -->
-      <?php include('ket.php'); ?>
-  </section><!-- End Portfolio Section -->
-  <section id="team" class="team">
-    <?php include('tim.php')?>
-  </section>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Dinas Perpustakaan dan Kearsipan </h3>
-            <p>
-              Jl. Patimura no. 1A Bojonegoro <br>
-              Kabupaten Bojonegoro<br>
-              Jawa TImur <br><br>
-              <strong>Phone:</strong> (0353) 891907<br>
-              <strong>Email:</strong> perpus.arsip.bjn@gmail.com<br>
+    <!-- Awal Team -->
+    <section class="gallary" id="team">
+      <div class="section__container gallary__container">
+        <div class="image__gallary">
+          <div class="gallary__col">
+            <img src="assets/perpus_kita.jpg" alt="gallary" />
+          </div>
+          <div class="gallary__col">
+            <img src="assets/perpus_alun.jpg" alt="gallary" />
+            <img src="assets/perpus2.jpg" alt="gallary" />
+          </div>
+        </div>
+        <div class="gallary__content">
+          <div>
+            <h2 class="section__title">Team Pengembang website ini</h2>
+            <p class="section__subtitle" style="text-align: justify">
+              Website perhitungan IPLM ini dikembangkan oleh tim yang terdiri dari Dohan, Oki, dan Dina, dengan tujuan memberikan akses mudah dan akurat untuk mengukur Indeks Pembangunan Literasi Masyarakat.
             </p>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End Team  -->
 
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Dinas Perpustakaan dan Kearsipan Kabupaten Bojonegoro</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">Mahasiswa UTM Teknik Informatika 2021</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <footer class="footer">
+      <div class="footer__bar">Copyright © 2024 Dinas Perpustakaan dan Kearsipan Kabupaten Bojonegoro.</div>
+    </footer>
+  </body>
 </html>

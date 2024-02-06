@@ -1,4 +1,3 @@
-<?php 
+<?php
 include('layouts/tampilan.php')
 ?>
-
